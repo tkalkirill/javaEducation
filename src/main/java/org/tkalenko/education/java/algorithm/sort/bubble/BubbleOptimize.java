@@ -3,7 +3,7 @@ package org.tkalenko.education.java.algorithm.sort.bubble;
 public class BubbleOptimize extends Bubble {
     @Override
     public void sort(int[] array) {
-        if (array == null || array.length < 0) return;
+        if (array == null || array.length < 2) return;
         boolean swap = true;
         int i = -1, j;
         while (swap) {
