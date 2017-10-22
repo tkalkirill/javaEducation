@@ -4,6 +4,7 @@ import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.tkalenko.education.java.algorithm.sort.bubble.*;
+import org.tkalenko.education.java.algorithm.sort.insert.Insert;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -31,7 +32,9 @@ public class SortTest {
                 new Object[]{new BubbleOptimize()},
                 new Object[]{new OddEven()},
                 new Object[]{new Cocktail()},
-                new Object[]{new Comb()}
+                new Object[]{new Comb()},
+                //insert and his modifications
+                new Object[]{new Insert()}
         );
     }
 
