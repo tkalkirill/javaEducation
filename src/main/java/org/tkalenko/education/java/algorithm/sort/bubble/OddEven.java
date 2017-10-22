@@ -1,13 +1,18 @@
-package org.tkalenko.education.java.algorithm.sort;
+package org.tkalenko.education.java.algorithm.sort.bubble;
 
-import org.tkalenko.education.java.algorithm.sort.Sort;
-
-public class Bubble implements Sort {
+public class OddEven extends Bubble {
     @Override
     public void sort(int[] array) {
         if (array == null || array.length < 0) return;
         for (int i = 0, j; i < array.length; i++) {
-            for (j = 0; j < array.length - 1; j++) {
+            if ((i & 1) == 0) {
+                //even
+                j = 0;
+            } else {
+                //odd
+                j = 1;
+            }
+            for (; j < array.length - 1; j += 2) {
                 if (array[j] > array[j + 1]) {
                     array[j] += array[j + 1];
                     array[j + 1] = array[j] - array[j + 1];

@@ -3,6 +3,7 @@ package org.tkalenko.education.java.algorithm.sort;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.tkalenko.education.java.algorithm.sort.bubble.*;
 
 import java.util.Arrays;
 import java.util.Collection;

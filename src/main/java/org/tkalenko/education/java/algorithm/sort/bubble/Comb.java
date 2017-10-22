@@ -1,4 +1,4 @@
-package org.tkalenko.education.java.algorithm.sort;
+package org.tkalenko.education.java.algorithm.sort.bubble;
 
 public class Comb extends Bubble {
     @Override
